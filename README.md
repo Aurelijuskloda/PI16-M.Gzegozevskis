@@ -6,15 +6,15 @@
 
 KATALOGŲ STRUKTŪRA\
 |\
-+-- <b>BubbleSortAlgorithm</b> (<i>Šiame kataloge rasite trečios užduoties realizaciją.</i>)\
++-- <b>BubbleSortAlgorithm</b> (<i>Šiame kataloge rasite trečiosios užduoties realizaciją.</i>)\
 |\
-+-- <b>LotteryAlgorithm</b> (<i>Šiame kataloge rasite antros užduoties realizaciją.</i>)\
++-- <b>DesignPatterns</b> (Šiame kataloge rasite penktosios užduoties realizaciją.)\
 |\
-+-- <b>FirstUIApp</b> (<i>Šiame kataloge rasite primos užduoties realizaciją.</i>)\
++-- <b>FirstUIApp</b> (<i>Šiame kataloge rasite primosios užduoties realizaciją.</i>)\
 |\
 +-- <b>FootballRestAPI</b> (<i>Šiame kataloge rasite ketvirtosios užduoties realizaciją.</i>)\
 |\
-+-- <b>DesignPatterns</b> (Šiame kataloge rasite penktosios užduoties realizaciją.)\
++-- <b>LotteryAlgorithm</b> (<i>Šiame kataloge rasite antrosios užduoties realizaciją.</i>)\
 |\
 +-- README.MD
 

@@ -4,7 +4,7 @@
 
 **Programinė įranga:** IntelliJ IDEA.
 
-KATALOGŲ STRUKTŪRA\
+PI16-M.Gzegozevskis\
 |\
 +-- <b>BubbleSortAlgorithm</b> (<i>Šiame kataloge rasite trečiosios užduoties realizaciją.</i>)\
 |\

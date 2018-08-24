@@ -18,4 +18,4 @@ KATALOGŲ STRUKTŪRA\
 |\
 +-- README.MD
 
-**Papildoma informacija**.
+**Papildoma informacija**: Kadangi **FirstUIApp** programos realizacijai yra naudojama trečios šalies biblioteka Lombok, šią biblioteką privalote įsidiegti prieš paleidžiant programą, kurią rasite šiuo adresu: <a href="https://projectlombok.org/" target="_blank">(https://projectlombok.org/)</a>.

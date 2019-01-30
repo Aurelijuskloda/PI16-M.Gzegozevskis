@@ -1,10 +1,10 @@
-### Programavimo kalbos Java praktinės užduotys
+Course Title: **Programavimo kalbos Java praktinės užduotys** 
 
-**Vardas, pavardė, grupė:** Marius Gžegoževskis, PI16G.
+Fullname: **Vardas, pavardė, grupė:** Marius Gžegoževskis, PI16G.
 
-**Programinė įranga:** IntelliJ IDEA.
+Software used: **Programinė įranga:** IntelliJ IDEA.
 
-**Katalogų struktūra:** 
+Document Structure Tree: **Katalogų struktūra:** 
 
 PI16-M.Gzegozevskis\
       |\
@@ -20,4 +20,4 @@ PI16-M.Gzegozevskis\
   |\
   +-- README.MD
 
-**Papildoma informacija**: Kadangi **FirstUIApp** programos realizacijai yra naudojama trečios šalies biblioteka Lombok, šią biblioteką privalote įsidiegti prieš paleidžiant programą, kurią rasite šiuo adresu: <a href="https://projectlombok.org/" target="_blank">(https://projectlombok.org/)</a>.
+Other important information: **Papildoma informacija**: Kadangi **FirstUIApp** programos realizacijai yra naudojama trečios šalies biblioteka Lombok, šią biblioteką privalote įsidiegti prieš paleidžiant programą, kurią rasite šiuo adresu: <a href="https://projectlombok.org/" target="_blank">(https://projectlombok.org/)</a>.

@@ -1,0 +1,202 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <Windows.h>
+#include <string.h>
+#include <math.h>
+
+int conv(int de1);
+//int conv2(int des);
+void decim(des);
+int convoct(octal);
+int pasirinkimas();
+int getbin(); // case 1
+int getdec(); // case2
+int desoct(); // case 3
+int octtodes(); // case 4
+int octa(int E);
+
+int  atgal, amzius ;
+char vardasd[15] = "bobas", vardas[15]= "bobas", pavarde[15], MAS[16];
+
+int main()
+{
+    {
+        int i = strcmp(vardasd, vardas);
+        if(i==0)
+        {
+            printf("iveskite varda, pavarde, amziu: ",vardas, pavarde, amzius);
+            scanf("%s",&vardas);
+            scanf("%s",&pavarde);
+            scanf("%d",&amzius);
+
+        }
+        system("cls");
+        switch (pasirinkimas())
+        {
+
+        case 1:
+            getbin();
+            getch();
+            main();
+            break;
+
+        case 2:
+            getdec();
+            getch();
+            main();
+            break;
+
+        case 3:
+            desoct();
+            getch();
+            main();
+            break;
+
+        case 4:
+            octtodes();
+            getch();
+            main();
+            break;
+
+        case 5:
+            exit(0);
+            break;
+        default:
+            printf("ivedete bloga pasirinkima\n\n");
+        getch();
+        main();
+        }
+    }
+
+}
+int pasirinkimas()
+{
+    printf(" Vardas: %s \n",vardas);
+    printf(" Pavarde: %s \n",pavarde);
+    printf(" Amzius: %d \n",amzius);
+
+    puts ("===============================");
+    puts ("            meniu              ");
+    puts ("===============================");
+    puts ("1. binary to decimal");
+    puts ("2. decimal to binary");
+    puts ("3. decimal to oct");
+    puts ("4. oct to decimal");
+    puts ("5. exit");
+    printf(">>");
+    scanf("%d", &atgal);
+    return (atgal);
+
+}
+int getbin()
+{
+    int de1;
+    printf("iveskite dvejetaini skaiciu :\n");
+    scanf("%d", &de1);
+    printf("binary :%d \n decimal : %d ", de1, conv(de1));
+    return 0;
+
+    return 0;
+}
+int conv(int de1)
+{
+    int de= 0, i = 0, r=0;
+    int  d=de1;
+    while (d!=0)
+    {
+        r = d%10;
+        d /= 10;
+        de += r*pow(2,i);
+        ++i;
+    }
+    return de;
+
+}
+
+           int getdec(){
+               int des;
+            printf("iveskite desimtaini skaiciu : \n");
+            scanf ("%d", &des);
+            int n= des;
+//            conv2(des);
+            printf("\n>>>decimal : %d", des);
+            printf("\n>>>binary : ");
+            decToBinary(n);
+
+
+            }
+void decToBinary(int n)
+{
+    int binaryNum[32];
+    int i = 0;
+    while (n > 0) {
+        binaryNum[i] = n % 2;
+        n = n / 2;
+        i++;
+    }
+    for (int j = i - 1; j >= 0; j--)
+        printf("%d", binaryNum[j] );
+}
+//int conv2(int des)
+//{int MAS[16],i =0;
+//    int s =16, desi=des,r=0;
+//    printf("\n>>>>binary :");
+//    while(desi>0)
+//    {
+//    r=desi%2;
+//if (desi>0){ printf("%d", r);
+//i++;
+//MAS[s]=r;
+//}
+//desi=desi/2;
+//    s--;
+//    }
+//    while(i>0){ printf("%d", MAS[i]);
+//    i--;}
+//}
+
+
+int desoct(){
+    int E;
+printf("ieskite desimtaini skaiciu:  ");
+scanf ("%d", &E);
+printf("desimtainis skaicius: %d \n astuntainis skaicius : %d", E, octa(E));
+}
+int octa(int E)
+{
+    int O = 0, i = 1;
+    while (E != 0)
+    {
+        O += (E % 8) * i;
+        E /= 8;
+        i *= 10;
+    }
+    return O;
+}
+int octtodes()
+{
+    int octal;
+
+    printf("Iveskite astuntaini skaiciu: ");
+    scanf("%d", &octal);
+
+    printf("Astuntainis: %d \n desimtainis: %d", octal, convoct(octal));
+
+    return 0;
+}
+int convoct(int octal){
+{
+    int desim = 0, i = 0;
+
+    while(octal != 0)
+    {
+        desim += (octal%10) * pow(8,i);
+        ++i;
+        octal/=10;
+    }
+
+    i = 1;
+
+    return desim;
+}
+}
